@@ -3,6 +3,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+roberta-base-go_emotions
+
 # C extensions
 *.so
 
