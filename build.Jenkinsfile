@@ -1,11 +1,11 @@
 pipeline {
     agent any
 
-    stages {
+   stages {
         stage('Build') {
             steps {
-                sh 'echo h'
-                sh 'echo building...'
+                withCredentials([string(credentialsId: 'Roberta', variable: 'TOKEN')]) {
+                    sh 'echo building...'
             }
         }
     }
