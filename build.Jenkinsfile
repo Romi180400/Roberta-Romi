@@ -53,7 +53,7 @@ pipeline {
         always {
             // Clean up Docker images to free space
             sh 'docker image prune -f'
-            // Optionally, add other cleanup steps here
+            // Optionally, add other cleanup steps here......
         }
     }
 }
